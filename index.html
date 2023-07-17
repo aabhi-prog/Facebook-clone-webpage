@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendsbook</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/08bfa75678.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <img src="myimages/logo.jpeg" class="logo">
+            <ul>
+                <li><img src="socialbook_img/notification.png"></li>
+                <li><img src="socialbook_img/inbox.png"></li>
+                <li><img src="socialbook_img/video.png"></li>
+
+            </ul>
+        </div>
+        <div class="nav-right">
+
+            <div class="search-box">
+                <img src="socialbook_img/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="myimages/profile.pic.jpg">
+            </div>
+
+        </div>
+<!-------------------settings menu----------->
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="myimages/profile.pic.jpg">
+                    <div>
+                        <p>Jay Thakur</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="socialbook_img/feedback.png">
+                    <div>
+                        <p>Give feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="socialbook_img/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="socialbook_img/arrow.png"
+                        width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="socialbook_img/help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="socialbook_img/arrow.png"
+                        width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="socialbook_img/display.png" class="settings-icon">
+                    <a href="#">Display & Acceessibilty <img src="socialbook_img/arrow.png"
+                        width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="socialbook_img/logout.png" class="settings-icon">
+                    <a href="#">Logout <img src="socialbook_img/arrow.png"
+                        width="10px"></a>
+                </div>
+
+            </div>
+            
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <!--  left-sidebar------------------    --->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="socialbook_img/news.png"> Latest News</a>
+                <a href="#"><img src="socialbook_img/friends.png"> Friends</a>
+                <a href="#"><img src="socialbook_img/group.png"> Groups</a>
+                <a href="#"><img src="socialbook_img/marketplace.png"> Marketplace</a>
+                <a href="#"><img src="socialbook_img/watch.png"> Watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="socialbook_img/shortcut-1.png"> Web Develpoers</a>
+                <a href="#"><img src="socialbook_img/shortcut-2.png"> Web Design course</a>
+                <a href="#"><img src="socialbook_img/shortcut-3.png"> Full stack Development</a>
+                <a href="#"><img src="socialbook_img/shortcut-4.png"> Web Experts</a>
+
+            </div>
+        </div>
+                <!--  main-content------------------    --->
+        <div class="main-content">
+            
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="socialbook_img/upload.png">
+                    <p>Post Story</p>
+                 </div>
+                 <div class="story story2">
+                    <img src="myimages/member-1.jpg">
+                    <p>Aryan Sharma</p>
+                 </div>
+                 <div class="story story3">
+                    <img src="myimages/member-2.jpg">
+                    <p>Ravneet Kaur</p>
+                 </div>
+                 <div class="story story4">
+                    <img src="myimages/member-3.jpg">
+                    <p>Abhishek</p>
+                 </div>
+                 <div class="story story5">
+                    <img src="myimages/member-4.jpg">
+                    <p>chetan</p>
+                 </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="myimages/profile.pic.jpg">
+                    <div>
+                        <p>Jay Thakur</p>
+                        <small>Public <i class="fa-solid fa-sort-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="what's on your mind Jhon?"></textarea>
+                    <div class="add-post-link">
+                        <a href="#"><img src="socialbook_img/live-video.png"> Live Video </a>
+                        <a href="#"><img src="socialbook_img/photo.png"> Photo Video </a>
+                        <a href="#"><img src="socialbook_img/feeling.png"> Feeling/Activity </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="myimages/profile.pic.jpg">
+                        <div>
+                            <p>Jay Thakur</p>
+                            <span>april 11 2023, 20:40 PM</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">-Unleashing all the fun-loving monsters in us. <br>
+                    -I am having the best time at the college fest. <br>
+                    -It is time to enjoy the party, so get ready for a bucket full of fun. <br>
+                    -Cheers to a night without brakes. <br> <a href="#">#college</a>
+                <a href="#">#fest&friends</a></p>
+                <img src="myimages/feed-image1.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="socialbook_img/like-blue.png"> 180</div>
+                        <div><img src="socialbook_img/comments.png"> 75</div>
+                        <div><img src="socialbook_img/share.png"> 68</div>
+
+                    </div>
+                    <div class="post-profile-icon">
+                         <img src="myimages/profile.pic.jpg"><i class="fa-solid fa-sort-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="myimages/profile.pic.jpg">
+                        <div>
+                            <p>Jay Thakur</p>
+                            <span>Febuary 24 2023, 16:01 PM</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">-Wish life is like this picture. <br>
+                    -Let us light up lives with hopes and dreams. .... <br>
+                    -Diwali is all about celebrating life with the people you love. ... <br>
+                    -A balanced diet is a laddoo in each hand – Happy Diwali. ... <br>
+                    -🥰🥰😍😍<br>
+                    <a href="#">#COUSIONGANG</a>
+                <a href="#">#FESTIVALVIBE</a></p>
+                <img src="myimages/feed-image2.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="socialbook_img/like.png"> 90</div>
+                        <div><img src="socialbook_img/comments.png"> 68</div>
+                        <div><img src="socialbook_img/share.png"> 34</div>
+
+                    </div>
+                    <div class="post-profile-icon">
+                         <img src="myimages/profile.pic.jpg"><i class="fa-solid fa-sort-down"></i>
+                    </div>
+                </div>
+
+            </div>
+            
+<!-----video post start ---------------------------->
+<div class="post-container">
+    <div class="post-row">
+        <div class="user-profile">
+            <img src="myimages/profile.pic.jpg">
+            <div>
+                <p>Jay Thakur</p>
+                <span>january 15 2023, 10:40 PM</span>
+            </div>
+        </div>
+        <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+    </div>
+    
+    <p class="post-text"> -“Let's dance until the sun comes up.” <br>
+        -“Let's make this a night to remember.” <br>
+        -“Dancing is like dreaming with your feet.” <br>
+        -This is my happy place. <br>
+        -“Keep calm and dance on.”<br>
+        <a href="#">#CLUBVIBE check✅</a> <br>
+    <a href="#">#PARTYGIRLS 😍😍😎😎</a></p>
+    <video class="post-video" autoplay controls><source src="myimages/feed-video.mp4"></video>
+
+    <div class="post-row">
+        <div class="activity-icons">
+            <div><img src="socialbook_img/like.png"> 125</div>
+            <div><img src="socialbook_img/comments.png"> 102</div>
+            <div><img src="socialbook_img/share.png"> 54</div>
+
+        </div>
+        <div class="post-profile-icon">
+             <img src="myimages/profile.pic.jpg"><i class="fa-solid fa-sort-down"></i>
+        </div>
+    </div>
+
+</div>
+
+
+<!-----video post end ---------------------------->
+
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="myimages/profile.pic.jpg">
+                        <div>
+                            <p>Jay Thakur</p>
+                            <span>December 20 2022, 15:40 PM</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text"> -Saying goodbye to someone, just means that there's a hello waiting around the corner. <br>
+
+                    -How lucky I am to have something that makes saying "Goodbye" so hard. <br>
+                    
+                    -There are no goodbyes for us. Wherever you are, you will always be in my heart. <br>
+                    
+                    -A goodbye isn't painful unless you're never going to say hello again. <br>
+                    
+                    -It's time to say goodbye, but I think goodbyes are sad, and I'd much rather say hello. Hello to a new adventure. <br>
+                    <a href="#">#SCHOOL</a>
+                    <a href="#">#frindships</a>
+                <a href="#">#FAREWALL</a></p>
+                <img src="myimages/feed-image3.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="socialbook_img/like.png"> 110</div>
+                        <div><img src="socialbook_img/comments.png"> 105</div>
+                        <div><img src="socialbook_img/share.png"> 45</div>
+
+                    </div>
+                    <div class="post-profile-icon">
+                         <img src="myimages/profile.pic.jpg"><i class="fa-solid fa-sort-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="myimages/profile.pic.jpg">
+                        <div>
+                            <p>Jay Thakur</p>
+                            <span>August 04 2022, 12:40 AM</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">-A true love story never ends. <br>
+                    -My favorite place in the world is next to you. <br>
+                    -Love you today. Love you tomorrow. Love you forever. <br>
+                    -P.S. I love you. <br>
+                    💞💞<br>
+                    <a href="#">#Mismatch</a>
+                <a href="#">#loveforever</a></p>
+                <img src="myimages/feed-image5.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="socialbook_img/like.png"> 79</div>
+                        <div><img src="socialbook_img/comments.png"> 35</div>
+                        <div><img src="socialbook_img/share.png"> 15</div>
+
+                    </div>
+                    <div class="post-profile-icon">
+                         <img src="myimages/profile.pic.jpg"><i class="fa-solid fa-sort-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="myimages/profile.pic.jpg">
+                        <div>
+                            <p>Jay Thakur</p>
+                            <span>June 24 2022, 13:40 PM</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">->“There's nothing more magical than watching a sunset with a loved one.” <br>
+                    ->“I love you to the sunset and back.” <br>
+                    ->“The sky has changed from orange to a hundred shades of pink to a dark navy blue, <br>
+                     and here I am still loving you.” <br>
+                    -> was in love with the sunset. <br> 
+                    <a href="#">#SUNSET</a>
+                    <a href="#">#Partners</a>
+                <a href="#">#LOVEBIRDS</a></p>
+                <img src="myimages/feed-image4.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="socialbook_img/like.png"> 85</div>
+                        <div><img src="socialbook_img/comments.png"> 19</div>
+                        <div><img src="socialbook_img/share.png"> 31</div>
+
+                    </div>
+                    <div class="post-profile-icon">
+                         <img src="myimages/profile.pic.jpg"><i class="fa-solid fa-sort-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <button type="button" class="load-more-btn">Load More</button>
+            
+  
+        </div>
+
+
+                <!--  right-sidebar------------------    --->
+        <div class="right-sidebar">
+
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>August</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Tata Consultancy Services</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+                <div class="event">
+                    <div class="left-event">
+                        <h3>22</h3>
+                        <span>December</span>
+                    </div>
+                    <div class="right-event">
+                        <h4>Mobile Marketing</h4>
+                        <p><i class="fa-solid fa-location-dot"></i> Tata Consultancy Services</p>
+                        <a href="#">More Info</a>
+                    </div>
+                </div>
+                <div class="sidebar-title">
+                    <h4>Advetisment</h4>
+                    <a href="#">Close</a>
+                </div>
+                <img src="myimages/advertisment.jpg" class="sidebar-ads">
+
+                <div class="sidebar-title">
+                    <h4>Conversation</h4>
+                    <a href="#">Hide Chat</a>
+                </div>
+
+                <div class="online-list">
+                    <div class="online">
+                        <img src="myimages/member-1.jpg">
+                    </div>
+                    <p>Aryan Sharma</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="myimages/member-2.jpg">
+                    </div>
+                    <p>Ravneet Kaur</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="myimages/member-4.jpg">
+                    </div>
+                    <p>Abhishek Shukla</p>
+                </div>
+
+        </div>
+    </div>
+    
+
+<div class="footer">
+    <p>Copyright 2023 - JUST FOR PARCTICE </p>
+</div>
+<script src="script.js"></script>
+</body>
+</html> 
